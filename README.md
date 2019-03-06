@@ -82,3 +82,7 @@ Once you have checked out this branch, you can start making your changes. You wi
 Now let's say you are done with your changes. Commit any leftover changes you have. Then publish your branch (the client should give you this option in the upper right). Once the branch is published, it will be visible in the remote repo; anyone can check out your branch and work off from it.
 
 Now you can make a pull request (PR). In the client menu at the top, go to Branch, then select Create Pull Request (or hit ctrl + r). This will open up a tab in your browser to the steps in creating the PR. Then it just has to be approved and merged by the reviewer.
+
+
+
+HEEYYYYYYY!
