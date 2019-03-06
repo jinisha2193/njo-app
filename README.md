@@ -4,6 +4,34 @@ This is the full project.
 
 The server folder contains the Spring Boot application and the client folder contains the Angular application.
 
+## Developing the Spring Boot application
+
+If you are not familiar with Spring Boot, I would recommend starting with this free tutorial on youtube:
+
+https://www.youtube.com/watch?v=msXL2oDexqw&list=PLmbC-xnvykcghOSOJ1ZF6ja3aOgZAgaMO
+
+### Edit the application.properties configuration
+
+Currently, the configuration looks like this:
+
+```
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://{endpoint}:3306/{dbname}
+spring.datasource.username=user
+spring.datasource.password=password
+server.port=5000
+```
+
+This is where we would connect to the database. On production, I am using an AWS RDS instance, so the credentials have been scrubbed here. Since you will have your own local MySQL server for development, provide the appropriate credentials here. The endpoint should be localhost and the dbname is whatever database you want to use from your local server (you will probably have to create one). You can configure the port to whatever port you want to use, however if you plan to make a PR then it should stay at 5000 for the AWS EB instance to work.
+
+If you do not have MySQL, download from here:
+
+https://dev.mysql.com/downloads/windows/installer/8.0.html
+
+Choose to install the web-community (smaller) one if you are connected to the internet. The next page will ask you to sign in with an Oracle account; scroll down to skip this and click the download link. Follow the installation wizard.
+
+Login and connect to your database. Create new schema. This is your new database that you will use as the "dbname" in the datasource configuration I provided above.
+
 ## General git flow
 
 If you are new to git I would recommend downloading the Github Desktop for Windows. Once that is downloaded, you can clone this repository (choose the "open with Desktop" option). If you want to make pull requests, then you will have to Fork it instead:
