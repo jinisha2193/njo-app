@@ -10,9 +10,9 @@ If you are not familiar with Spring Boot, I would recommend starting with this f
 
 https://www.youtube.com/watch?v=msXL2oDexqw&list=PLmbC-xnvykcghOSOJ1ZF6ja3aOgZAgaMO
 
-Start IntelliJ
+Start IntelliJ and open the "server" folder. IntelliJ should install all the needed dependencies automatically (you may have to click the "Import Changes" option in the pop-up window that shows up - you can configure the settings to auto-install for Maven dependencies). 
 
-### Edit the application.properties configuration
+#### Edit the application.properties configuration
 
 Currently, the configuration looks like this:
 
@@ -33,6 +33,10 @@ https://dev.mysql.com/downloads/windows/installer/8.0.html
 Choose to install the web-community (smaller) one if you are connected to the internet. The next page will ask you to sign in with an Oracle account; scroll down to skip this and click the download link. Follow the installation wizard.
 
 Login and connect to your database. Create new schema. This is your new database that you will use as the "dbname" in the datasource configuration I provided above.
+
+#### Edit the Run configuration
+
+The Spring Boot project should be ready to run. Click Run in the top menu and click Edit Configurations if that is the only option it gives you. Make sure in the left column, you see "Application" with a drop down arrow that shows the "NjoAppApplication". The settings are on the right. It should have Main Class as "njo.practice.app.njoApp.NjoAppApplication". The Working directory should be pointing to the server folder. Use classpath of Module should say "GreetingArt" (name of artifact ID). Your JRE should be 1.8 (or 11 if you're using 11). Hit apply and Run.
 
 ## Developing the Angular application
 
