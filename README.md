@@ -32,7 +32,9 @@ https://dev.mysql.com/downloads/windows/installer/8.0.html
 
 Choose to install the web-community (smaller) one if you are connected to the internet. The next page will ask you to sign in with an Oracle account; scroll down to skip this and click the download link. Follow the installation wizard.
 
-Login and connect to your database. Create new schema. This is your new database that you will use as the "dbname" in the datasource configuration I provided above.
+Login and connect to your database with SQL Workbench (or whatever client you use). Create new schema. This is your new database that you will use as the "dbname" in the datasource configuration I provided above.
+
+It is a good idea to insert some data now, either via the SQL client or by starting your Spring Boot app and making REST calls. This is necessary for the Angular code to display something when you run it locally; this will make more sense below in the Angular section.
 
 #### Edit the Run configuration
 
