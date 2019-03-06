@@ -6,9 +6,13 @@ The server folder contains the Spring Boot application and the client folder con
 
 ## General git flow
 
-If you are new to git I would recommend downloading the Github Desktop for Windows. Once that is downloaded, you can clone this repository (choose the "open with Desktop" option). If you want to make pull requests, then you will have to Fork it instead.
+If you are new to git I would recommend downloading the Github Desktop for Windows. Once that is downloaded, you can clone this repository (choose the "open with Desktop" option). If you want to make pull requests, then you will have to Fork it instead:
 
-It should open up your Github Desktop client and it will begin cloning the repo. Once it is finished, then ta-da that is your local repository (which you just cloned from the "remote" repository). Any changes you make while in that local repository will be tracked by git. **Before you start making any changes however you should create a new branch**.
+https://help.github.com/en/articles/creating-a-pull-request-from-a-fork
+
+Follow the above instructions on how to create a pull request with your fork. Below are instructions on how to commit changes to a remote repository in general, whether it is your own fork or if you are a collaborator on private repo.
+
+If you chose to clone the repo with the desktop option then it should open up your Github Desktop client and it will begin cloning the repo. Once it is finished, then ta-da that is your local repository (which you just cloned from the "remote" repository). Any changes you make while in that local repository will be tracked by git. **Before you start making any changes however you should create a new branch**.
 
 In the upper middle of the client you will see the current branch you are on (master). Never commit directly to master. Click this option and create new branch; name it in relation to what type of changes you are making. For example, say you want to add a "Customer" class in the Spring Boot application to add it as a table in the database. You could name your branch: add-customer-class.
 
