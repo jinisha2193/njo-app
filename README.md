@@ -63,11 +63,13 @@ Now follow this URL on your browser: localhost:4200. If you did not enter any da
 
 ## General git flow
 
-If you are new to git I would recommend downloading the Github Desktop for Windows. Once that is downloaded, you can clone this repository (choose the "open with Desktop" option). If you want to make pull requests, then you will have to Fork it instead:
+If you are new to git I would recommend downloading the Github Desktop for Windows*. Once that is downloaded, you can clone this repository (choose the "open with Desktop" option). If you want to make pull requests, then you will have to Fork it instead:
 
 https://help.github.com/en/articles/creating-a-pull-request-from-a-fork
 
 Follow the above instructions on how to create a pull request with your fork. Below are instructions on how to commit changes to a remote repository in general, whether it is your own fork or if you are a collaborator on private repo.
+
+*Note that Github Desktop is good specifically for Github. If you are planning to work on projects not hosted on Github, then it is recommended to use a different client, such as GitKraken: https://www.gitkraken.com/
 
 If you chose to clone the repo with the desktop option then it should open up your Github Desktop client and it will begin cloning the repo. Once it is finished, then ta-da that is your local repository (which you just cloned from the "remote" repository). Any changes you make while in that local repository will be tracked by git. **Before you start making any changes however you should create a new branch**.
 
