@@ -10,6 +10,8 @@ If you are not familiar with Spring Boot, I would recommend starting with this f
 
 https://www.youtube.com/watch?v=msXL2oDexqw&list=PLmbC-xnvykcghOSOJ1ZF6ja3aOgZAgaMO
 
+Start IntelliJ
+
 ### Edit the application.properties configuration
 
 Currently, the configuration looks like this:
@@ -31,6 +33,29 @@ https://dev.mysql.com/downloads/windows/installer/8.0.html
 Choose to install the web-community (smaller) one if you are connected to the internet. The next page will ask you to sign in with an Oracle account; scroll down to skip this and click the download link. Follow the installation wizard.
 
 Login and connect to your database. Create new schema. This is your new database that you will use as the "dbname" in the datasource configuration I provided above.
+
+## Developing the Angular application
+
+If you are not familiar with Angular, you can view their main tutorial here:
+
+https://angular.io/tutorial
+
+Below are some helpful tutorials:
+
+https://www.youtube.com/watch?v=k5E2AVpwsko
+
+https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ
+
+Start Visual Studio Code and open the "client" folder. Navigate to this file: "test.service.ts". Note the http get request here; it is pointing to the AWS EB instance that is hosting the Spring Boot app. Change this to point to your locally run Spring Boot app (eg. "//localhost:5000/users"). Make sure your Spring Boot app is running.
+
+In the terminal, navigate to the "client" directory. Run the following commands:
+
+```
+ng build --prod
+ng serve
+```
+
+Now follow this URL on your browser: localhost:4200. If you did not enter any data in the database or via REST API, then it will not show anything. Otherwise, you should see the application functioning properly.
 
 ## General git flow
 
